@@ -1,0 +1,7 @@
+{
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"liveServer.settings.port": 5501
+}
