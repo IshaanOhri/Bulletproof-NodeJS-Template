@@ -1,7 +1,9 @@
 #!/bin/bash
 
 clear
+echo "================="
 echo "Pushing to GitHub"
+echo "================="
 git add .
 echo "Enter commit message"
 read commit
