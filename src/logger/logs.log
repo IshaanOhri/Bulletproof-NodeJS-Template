@@ -1,0 +1,5 @@
+[2020-07-30T17:47:37.724] [INFO] default - NodeJS server listening on 127.0.0.1:3000
+[2020-07-30T17:48:07.197] [INFO] default - Method: GET URL: / Status: 200 Resp Time: 2.407 ms
+[2020-07-30T17:48:07.708] [INFO] default - Method: GET URL: /favicon.ico Status: 200 Resp Time: 0.208 ms
+[2020-07-30T17:49:04.091] [INFO] default - NodeJS server listening on 127.0.0.1:3000
+[2020-07-30T17:49:07.404] [INFO] default - Method: GET URL: / Status: 200 Resp Time: 2.347 ms
