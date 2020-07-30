@@ -20,6 +20,7 @@
 	"rules": {
 		"prettier/prettier": "error",
 		"no-unused-vars": "off",
+		"no-console": "off",
 		"prefer-const": "warn",
 		"import/extensions": [
 			"error",
