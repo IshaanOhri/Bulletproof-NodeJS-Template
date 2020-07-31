@@ -1,3 +1,6 @@
+/* eslint-disable import/first */
+require('./newrelic.js');
+
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
