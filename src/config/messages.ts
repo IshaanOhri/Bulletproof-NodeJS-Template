@@ -3,7 +3,7 @@ const code = {
 };
 
 const message = {
-	homeRoute: 'Hello World. Welcome to the bulletproof NodeJS template'
+	homeRoute: 'Hello World. Welcome to the bulletproof NodeJS template!'
 };
 
 export { code, message };
