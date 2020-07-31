@@ -38,3 +38,8 @@
 [2020-07-31T11:19:29.118] [INFO] default - Method: GET URL: / Status: 200 Resp Time: 2.255 ms
 [2020-07-31T11:19:30.097] [INFO] default - Method: GET URL: / Status: 200 Resp Time: 0.422 ms
 [2020-07-31T11:19:31.096] [INFO] default - Method: GET URL: / Status: 200 Resp Time: 0.404 ms
+[2020-08-01T01:01:13.026] [INFO] default - NodeJS server listening on 127.0.0.1:3000
+[2020-08-01T01:02:14.182] [INFO] default - Method: GET URL: / Status: 200 Resp Time: 3.756 ms
+[2020-08-01T01:11:51.514] [INFO] default - NodeJS server listening on 127.0.0.1:3000
+[2020-08-01T01:12:20.401] [INFO] default - NodeJS server listening on 127.0.0.1:3000
+[2020-08-01T01:12:26.137] [INFO] default - NodeJS server listening on 127.0.0.1:3000

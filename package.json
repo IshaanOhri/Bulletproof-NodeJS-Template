@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "node build.js",
 		"lint": "pretty-quick --staged && lint-staged",
-		"dev": "env-cmd -f ./src/config/dev.env ts-node ./src/index.ts",
+		"dev": "env-cmd -f ./src/config/dev.env nodemon ./src/index.ts",
 		"start": "pm2 restart ./ecosystem.config.js"
 	},
 	"repository": {
@@ -40,6 +40,7 @@
 		"gulp-typescript": "^6.0.0-alpha.1",
 		"husky": "^4.2.5",
 		"lint-staged": "^10.2.11",
+		"nodemon": "^2.0.4",
 		"prettier": "^2.0.5",
 		"pretty-quick": "^2.0.1",
 		"ts-node": "^8.10.2",
