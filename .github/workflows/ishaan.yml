@@ -29,5 +29,4 @@ jobs:
           rm -rf bin
           npm install
           npm run-script build
-          cd bin
           npm start
