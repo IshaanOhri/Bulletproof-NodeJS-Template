@@ -1,7 +1,7 @@
 {
 	"name": "bulletproof-nodejs-template",
 	"version": "1.0.0",
-	"description": "This is an industrial level NodeJS template that uses tools like TypeScript, Prettier, ESLint, Husky, NewRelic, etc",
+	"description": "This is an industrial level NodeJS template that uses tools like TypeScript, Prettier, ESLint, Husky, etc",
 	"main": "index.ts",
 	"scripts": {
 		"build": "node build.js",
