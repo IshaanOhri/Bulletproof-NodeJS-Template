@@ -13,10 +13,7 @@ childProcess.execSync('gulp', {
 console.log('Correcting package.json...');
 childProcess.execSync('npx npm-check-updates -u');
 const pkg = JSON.parse(fs.readFileSync('./package.json').toString());
-if (pkg.scripts && pkg.scripts.start)
-	pkg.scripts.start = `NODE_ENV=production ${pkg.scripts.start
-		.replace('ts-node', 'node')
-		.replace('.ts', '.js')}`;
+if (pkg.scripts && pkg.scripts.start) pkg.scripts.start = `NODE_ENV=production ${pkg.scripts.start.replace('ts-node', 'node').replace('.ts', '.js')}`;
 if (pkg.devDependencies) delete pkg.devDependencies;
 pkg.main = `${pkg.main.replace('.ts', '.js')}`;
 fs.writeFileSync('./bin/package.json', JSON.stringify(pkg, null, '\t'));
