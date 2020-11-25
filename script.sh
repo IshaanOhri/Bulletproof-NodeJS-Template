@@ -8,5 +8,5 @@ git add .
 echo "Enter commit message"
 read commit
 git commit -m "$commit"
-git checkout nginx-pm2
-git push origin nginx-pm2
+git checkout -b pm2
+git push origin pm2
