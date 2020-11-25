@@ -17,18 +17,18 @@
 
 ## Steps to start
 
-##### Development environment:
+#### Development environment:
 
-1. Create `dev.env` file and add environment variables according to `.env.example`:
+- Create `dev.env` file and add environment variables according to `.env.example`:
 ```
 touch ./src/config/dev.env
 ```
-2. Start server:
+- Start server:
 ```
 npm run dev
 ```
 
-##### Production environment:
+#### Production environment:
 
 ## Contributing
 
