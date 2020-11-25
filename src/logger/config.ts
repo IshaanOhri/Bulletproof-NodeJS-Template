@@ -1,3 +1,9 @@
+/*
+	Date: 25 November 2020
+	Author: Ishaan Ohri
+	Description: Contains configuration for log4js logger
+*/
+
 import { configure, getLogger } from 'log4js';
 import path from 'path';
 
