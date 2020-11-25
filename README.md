@@ -17,6 +17,16 @@
 
 ## Steps to start
 
+#### Clone repository
+```
+git clone https://github.com/IshaanOhri/Bulletproof-NodeJS-Template
+```
+
+#### Install packages
+```
+npm install
+```
+
 #### Development environment:
 
 - Create `dev.env` file and add environment variables according to `.env.example`:
