@@ -8,5 +8,5 @@ git add .
 echo "Enter commit message"
 read commit
 git commit -m "$commit"
-git checkout pm2
-git push origin pm2
+git checkout -b docker
+git push origin docker
