@@ -36,7 +36,7 @@
 		"gulp-newer": "^1.4.0",
 		"gulp-preprocess": "^3.0.3",
 		"gulp-typescript": "^6.0.0-alpha.1",
-		"husky": "^4.2.5",
+		"husky": "^4.3.0",
 		"lint-staged": "^10.2.11",
 		"nodemon": "^2.0.4",
 		"prettier": "^2.0.5",
