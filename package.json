@@ -13,7 +13,7 @@
 		"type": "git",
 		"url": "git+https://github.com/IshaanOhri/NodeJS-Template.git"
 	},
-	"author": "Ishaan Ohri and Akshit Sadana",
+	"author": "Ishaan Ohri",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/IshaanOhri/NodeJS-Template/issues"
@@ -33,10 +33,8 @@
 		"eslint-plugin-prettier": "^3.1.4",
 		"gulp": "^4.0.2",
 		"gulp-clean": "^0.4.0",
-		"gulp-minify": "^3.1.0",
 		"gulp-newer": "^1.4.0",
 		"gulp-preprocess": "^3.0.3",
-		"gulp-pretty-data": "^0.1.2",
 		"gulp-typescript": "^6.0.0-alpha.1",
 		"husky": "^4.2.5",
 		"lint-staged": "^10.2.11",

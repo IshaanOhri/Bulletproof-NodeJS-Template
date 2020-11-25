@@ -1,7 +1,5 @@
 const gulp = require('gulp');
-const minify = require('gulp-minify');
 const preprocess = require('gulp-preprocess');
-const prettyData = require('gulp-pretty-data');
 const clean = require('gulp-clean');
 const newer = require('gulp-newer');
 const ts = require('gulp-typescript');
@@ -13,43 +11,19 @@ const configuredExtensions = [];
 gulp.task('js', () => {
 	configuredExtensions.push('js');
 	return gulp
-		.src([
-			'src/**/*.js',
-			'!src/**/node_modules/',
-			'!src/**/node_modules/**/*'
-		])
+		.src(['src/**/*.js', '!src/**/node_modules/', '!src/**/node_modules/**/*'])
 		.pipe(newer('bin'))
 		.pipe(preprocess())
-		.pipe(
-			minify({
-				ext: {
-					min: '.js'
-				},
-				noSource: true
-			})
-		)
 		.pipe(gulp.dest('bin'));
 });
 
 gulp.task('ts', () => {
 	configuredExtensions.push('ts');
 	return gulp
-		.src([
-			'src/**/*.ts',
-			'!src/**/node_modules/',
-			'!src/**/node_modules/**/*'
-		])
+		.src(['src/**/*.ts', '!src/**/node_modules/', '!src/**/node_modules/**/*'])
 		.pipe(newer('bin'))
 		.pipe(preprocess())
 		.pipe(tsProject())
-		.pipe(
-			minify({
-				ext: {
-					min: '.js'
-				},
-				noSource: true
-			})
-		)
 		.pipe(gulp.dest('bin'));
 });
 
@@ -60,11 +34,7 @@ gulp.task('images', () => {
 	configuredExtensions.push('gif');
 	configuredExtensions.push('tif');
 	return gulp
-		.src([
-			'src/**/*.{png,jpg,jpeg,gif,tif}',
-			'!src/**/node_modules/',
-			'!src/**/node_modules/**/*'
-		])
+		.src(['src/**/*.{png,jpg,jpeg,gif,tif}', '!src/**/node_modules/', '!src/**/node_modules/**/*'])
 		.pipe(newer('bin'))
 		.pipe(gulp.dest('bin'));
 });
@@ -74,30 +44,12 @@ gulp.task('pretty-data', () => {
 	configuredExtensions.push('json');
 	configuredExtensions.push('xlf');
 	configuredExtensions.push('svg');
-	return gulp
-		.src([
-			'src/**/*.{xml,json,xlf,svg}',
-			'!src/**/node_modules/',
-			'!src/**/node_modules/**/*'
-		])
-		.pipe(newer('bin'))
-		.pipe(
-			prettyData({
-				type: 'minify',
-				preserveComments: false
-			})
-		)
-		.pipe(gulp.dest('bin'));
+	return gulp.src(['src/**/*.{xml,json,xlf,svg}', '!src/**/node_modules/', '!src/**/node_modules/**/*']).pipe(newer('bin')).pipe(gulp.dest('bin'));
 });
 
 gulp.task('copy', () => {
 	return gulp
-		.src([
-			'src/**/*',
-			`!src/**/*.{${configuredExtensions.join(',')}}`,
-			'!src/**/node_modules/',
-			'!src/**/node_modules/**/*'
-		])
+		.src(['src/**/*', `!src/**/*.{${configuredExtensions.join(',')}}`, '!src/**/node_modules/', '!src/**/node_modules/**/*'])
 		.pipe(newer('bin'))
 		.pipe(gulp.dest('bin'));
 });
@@ -106,9 +58,6 @@ gulp.task('clean', () => {
 	return gulp.src('bin').pipe(clean());
 });
 
-gulp.task(
-	'default',
-	gulp.parallel('js', 'ts', 'images', 'pretty-data', 'copy')
-);
+gulp.task('default', gulp.parallel('js', 'ts', 'images', 'pretty-data', 'copy'));
 gulp.task('build', gulp.series('default'));
 gulp.task('rebuild', gulp.series('clean', 'default'));
