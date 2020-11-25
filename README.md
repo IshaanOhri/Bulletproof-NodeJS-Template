@@ -15,7 +15,7 @@
 
 <br>
 
-## Steps to start
+## Steps to start server
 
 #### Clone repository
 ```
@@ -39,6 +39,19 @@ npm run dev
 ```
 
 #### Production environment:
+- Build project
+```
+npm run-script build
+```
+- Install `pm2` as global package
+```
+sudo npm install -g pm2
+```
+- Change contents of `ecosystem.config.js` if required
+- Start server:
+```
+npm start
+```
 
 ## Contributing
 
