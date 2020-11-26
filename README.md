@@ -17,6 +17,8 @@
 
 ## Steps to start server
 
+<i>In-order to use <code>pm2</code>, switch to <code>pm2</code> branch</i>
+
 #### Clone repository
 ```
 git clone https://github.com/IshaanOhri/Bulletproof-NodeJS-Template
