@@ -11,6 +11,7 @@
 <br>
 
 <p align="center">
+An industrial level NodeJS template that uses tools like TypeScript, Prettier, ESLint, Husky, PM2 and many more. The template also incorporates the MVC architecture.
 </p>
 
 <br>
