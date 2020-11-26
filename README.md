@@ -19,7 +19,7 @@
 
 #### Clone repository
 ```
-git clone --single-branch --branch nginx-pm2 https://github.com/IshaanOhri/Bulletproof-NodeJS-Template
+git clone --single-branch --branch docker https://github.com/IshaanOhri/Bulletproof-NodeJS-Template
 ```
 
 #### Development environment:
@@ -53,7 +53,7 @@ The project is distributed under the MIT License. See [LICENSE](https://github.c
 <p>
   <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/nodejs.svg" height=40 hspace=10>
   <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/typescript.svg" height=40 hspace=10>
-  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/docker.svg" height=40 hspace=10>
+  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/docker.png" height=40 hspace=10>
 </p>
 </p>
 
