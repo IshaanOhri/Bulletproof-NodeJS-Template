@@ -18,6 +18,8 @@ An industrial level NodeJS template that uses tools like TypeScript, Prettier, E
 
 ## Steps to start server
 
+<i>In-order to use <code>docker</code>, switch to <code>docker</code> branch</i>
+
 #### Clone repository
 ```
 git clone https://github.com/IshaanOhri/Bulletproof-NodeJS-Template
