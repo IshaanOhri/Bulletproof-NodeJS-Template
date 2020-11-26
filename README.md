@@ -19,7 +19,12 @@
 
 #### Clone repository
 ```
-git clone --single-branch --branch nginx-pm2 https://github.com/IshaanOhri/Bulletproof-NodeJS-Template
+git clone https://github.com/IshaanOhri/Bulletproof-NodeJS-Template
+```
+
+#### Switch branch
+```
+git checkout pm2
 ```
 
 #### Install packages
