@@ -1,0 +1,16 @@
+version: '3'
+services:
+  api:
+    build:
+      dockerfile: Dockerfile.dev
+      context: .
+    restart: always
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - HOST=0.0.0.0
+    ports:
+      - 3000:3000
+    volumes:
+      - /usr/app/node_modules
+      - .:/usr/app
