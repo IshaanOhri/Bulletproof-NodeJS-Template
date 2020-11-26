@@ -22,36 +22,14 @@
 git clone --single-branch --branch nginx-pm2 https://github.com/IshaanOhri/Bulletproof-NodeJS-Template
 ```
 
-#### Install packages
-```
-npm install
-```
-
 #### Development environment:
 
-- Create `dev.env` file and add environment variables according to `.env.example`:
-```
-touch ./src/config/dev.env
-```
 - Start server:
 ```
-npm run dev
+docker-compose up --build
 ```
 
 #### Production environment:
-- Build project
-```
-npm run-script build
-```
-- Install `pm2` as global package
-```
-sudo npm install -g pm2
-```
-- Change contents of `ecosystem.config.js` if required
-- Start server:
-```
-npm start
-```
 
 ## Contributing
 
@@ -75,6 +53,7 @@ The project is distributed under the MIT License. See [LICENSE](https://github.c
 <p>
   <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/nodejs.svg" height=40 hspace=10>
   <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/typescript.svg" height=40 hspace=10>
+  <img src="https://github.com/IshaanOhri/IshaanOhri/blob/master/assets/docker.svg" height=40 hspace=10>
 </p>
 </p>
 
