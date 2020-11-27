@@ -6,11 +6,11 @@
 */
 
 const code = {
-    homeRoute: 'homeRoute'
+  homeRoute: 'homeRoute'
 };
 
 const message = {
-    homeRoute: 'Hello World. Welcome to the Bulletproof NodeJS Template!'
+  homeRoute: 'Hello World. Welcome to the Bulletproof NodeJS Template!'
 };
 
 export { code, message };
