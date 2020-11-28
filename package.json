@@ -1,62 +1,62 @@
 {
-	"name": "bulletproof-nodejs-template",
-	"version": "1.0.0",
-	"description": "This is an industrial level NodeJS template that uses tools like TypeScript, Prettier, ESLint, Husky, etc",
-	"main": "index.ts",
-	"scripts": {
-		"build": "node build.js",
-		"lint": "pretty-quick --staged && lint-staged",
-		"dev": "env-cmd -f ./src/config/dev.env nodemon ./src/index.ts",
-		"start": "pm2 restart ./ecosystem.config.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/IshaanOhri/NodeJS-Template.git"
-	},
-	"author": "Ishaan Ohri",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/IshaanOhri/NodeJS-Template/issues"
-	},
-	"homepage": "https://github.com/IshaanOhri/NodeJS-Template#readme",
-	"devDependencies": {
-		"@types/cors": "^2.8.8",
-		"@types/express": "^4.17.9",
-		"@types/morgan": "^1.9.2",
-		"@typescript-eslint/eslint-plugin": "^4.8.2",
-		"@typescript-eslint/parser": "^4.8.2",
-		"env-cmd": "^10.1.0",
-		"eslint": "^7.14.0",
-		"eslint-config-airbnb-base": "^14.2.1",
-		"eslint-config-prettier": "^6.15.0",
-		"eslint-plugin-import": "^2.22.1",
-		"eslint-plugin-prettier": "^3.1.4",
-		"gulp": "^4.0.2",
-		"gulp-clean": "^0.4.0",
-		"gulp-newer": "^1.4.0",
-		"gulp-preprocess": "^3.0.3",
-		"gulp-typescript": "^6.0.0-alpha.1",
-		"husky": "^4.3.0",
-		"lint-staged": "^10.5.2",
-		"nodemon": "^2.0.6",
-		"prettier": "^2.2.0",
-		"pretty-quick": "^3.1.0",
-		"ts-node": "^9.0.0",
-		"typescript": "^4.1.2"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "npm run-script lint"
-		}
-	},
-	"lint-staged": {
-		"*.{ts,js}": "eslint --fix"
-	},
-	"dependencies": {
-		"cors": "^2.8.5",
-		"express": "^4.17.1",
-		"log4js": "^6.3.0",
-		"moment": "^2.29.1",
-		"morgan": "^1.10.0"
-	}
+  "name": "bulletproof-nodejs-template",
+  "version": "1.0.0",
+  "description": "This is an industrial level NodeJS template that uses tools like TypeScript, Prettier, ESLint, Husky, etc",
+  "main": "index.ts",
+  "scripts": {
+    "build": "node build.js",
+    "lint": "pretty-quick && lint-staged",
+    "dev": "env-cmd -f ./src/config/dev.env nodemon ./src/index.ts",
+    "start": "pm2 restart ./ecosystem.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IshaanOhri/NodeJS-Template.git"
+  },
+  "author": "Ishaan Ohri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IshaanOhri/NodeJS-Template/issues"
+  },
+  "homepage": "https://github.com/IshaanOhri/NodeJS-Template#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.8",
+    "@types/express": "^4.17.9",
+    "@types/morgan": "^1.9.2",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-preprocess": "^3.0.3",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.0",
+    "pretty-quick": "^3.1.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run-script lint"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": "eslint --fix"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "log4js": "^6.3.0",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0"
+  }
 }
