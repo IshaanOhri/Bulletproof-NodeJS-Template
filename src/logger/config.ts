@@ -1,9 +1,10 @@
 /*
-	Date Created: 25 November 2020
-	Last Change: 27 November 2020
-	Author: Ishaan Ohri
-	Description: Contains configuration for log4js logger
-*/
+ * @Author: Ishaan Ohri
+ * @Date: 2020-11-29 01:35:54
+ * @Last Modified by: Ishaan Ohri
+ * @Last Modified time: 2020-11-29 01:37:19
+ * @Description: Contains configuration for log4js logger
+ */
 
 import { configure, getLogger } from 'log4js';
 import path from 'path';

@@ -1,9 +1,10 @@
 /*
-	Date Created: 25 November 2020
-	Last Change: 27 November 2020
-	Author: Ishaan Ohri
-	Description: Contain all codes and messages for responses
-*/
+ * @Author: Ishaan Ohri
+ * @Date: 2020-11-29 01:34:41
+ * @Last Modified by: Ishaan Ohri
+ * @Last Modified time: 2020-11-29 01:34:41
+ * @Description: Contain all codes and messages for responses
+ */
 
 const code = {
   homeRoute: 'homeRoute'
