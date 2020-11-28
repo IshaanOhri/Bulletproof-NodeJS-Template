@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node build.js",
     "lint": "pretty-quick && lint-staged",
+    "update": "npx npm-check-updates -u",
     "dev": "ts-node ./src/index.ts"
   },
   "repository": {
