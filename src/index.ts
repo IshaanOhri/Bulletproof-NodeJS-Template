@@ -1,6 +1,6 @@
 /*
 	Date Created: 25 November 2020
-	Last Change: 27 November 2020
+	Last Change: 28 November 2020
 	Author: Ishaan Ohri
 	Description: The file is the driver file. It connects all routers and starts the application server.
 */
@@ -28,7 +28,7 @@ app.use(express.json());
 if (process.env.NODE_ENV === 'development') {
   app.use(
     morgan((tokens, req: Request, res: Response) => {
-      slogger.info(
+      logger.info(
         `Method: ${tokens.method(req, res)} URL: ${tokens.url(req, res)} Status: ${tokens.status(req, res)} Resp Time: ${tokens['response-time'](
           req,
           res

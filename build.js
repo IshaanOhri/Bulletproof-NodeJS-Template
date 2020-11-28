@@ -6,8 +6,8 @@ console.log('Building application...');
 const { env } = process;
 env.NODE_ENV = 'production';
 childProcess.execSync('gulp', {
-	env,
-	stdio: [0, 1, 2]
+  env,
+  stdio: [0, 1, 2]
 });
 
 console.log('Correcting package.json...');
@@ -20,7 +20,7 @@ fs.writeFileSync('./bin/package.json', JSON.stringify(pkg, null, '\t'));
 
 console.log('Installing production dependencies...');
 childProcess.execSync('npm install --only=production', {
-	cwd: './bin',
-	env,
-	stdio: [0, 1, 2]
+  cwd: './bin',
+  env,
+  stdio: [0, 1, 2]
 });
