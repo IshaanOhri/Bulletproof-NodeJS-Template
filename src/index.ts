@@ -1,9 +1,10 @@
 /*
-	Date Created: 25 November 2020
-	Last Change: 27 November 2020
-	Author: Ishaan Ohri
-	Description: The file is the driver file. It connects all routers and starts the application server.
-*/
+ * @Author: Ishaan Ohri
+ * @Date: 2020-11-29 01:39:38
+ * @Last Modified by: Ishaan Ohri
+ * @Last Modified time: 2020-11-29 01:39:38
+ * @Description: The file is the driver file. It connects all routers and starts the application server
+ */
 
 import express, { Application, Response, Request } from 'express';
 import cors from 'cors';
