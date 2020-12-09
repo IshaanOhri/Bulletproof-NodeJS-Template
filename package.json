@@ -2,12 +2,12 @@
   "name": "bulletproof-nodejs-template",
   "version": "1.0.0",
   "description": "This is an industrial level NodeJS template that uses tools like TypeScript, Prettier, ESLint, Husky, etc",
-  "main": "index.ts",
+  "main": "app.ts",
   "scripts": {
     "build": "node build.js",
-    "lint": "pretty-quick && lint-staged",
+    "lint": "pretty-quick",
     "update": "npx npm-check-updates -u",
-    "dev": "ts-node ./src/index.ts"
+    "dev": "ts-node ./src/app.ts"
   },
   "repository": {
     "type": "git",

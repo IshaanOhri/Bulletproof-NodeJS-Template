@@ -2,22 +2,23 @@
  * @Author: Ishaan Ohri
  * @Date: 2020-11-29 01:36:06
  * @Last Modified by: Ishaan Ohri
- * @Last Modified time: 2020-11-29 01:36:06
+ * @Last Modified time: 2020-12-09 14:50:24
  * @Description: The file is the driver file. It connects all routers and starts the application server
  */
 
-import express, { Application, Request, Response } from 'express';
+import express, { Application, Response, Request } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
-import logger from './logger/config';
-import miscRouter from './api/routes/misc';
+
+import logger from './log/config';
+import { router } from './api/routes';
+import { notFound, responseHandler } from './middleware';
+import { HOST, NODE_ENV, PORT } from './config';
 
 // Initialize app variable
 const app: Application = express();
 
 // Initialize all environment variables
-const PORT: number = Number(process.env.PORT);
-const HOST: string = String(process.env.HOST);
 
 // CORS
 app.use(cors());
@@ -26,7 +27,7 @@ app.use(cors());
 app.use(express.json());
 
 // Morgan configuration for development environment
-if (process.env.NODE_ENV === 'development') {
+if (NODE_ENV === 'development') {
   app.use(
     morgan((tokens, req: Request, res: Response) => {
       logger.info(
@@ -41,7 +42,13 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // Import routers
-app.use(miscRouter);
+app.use('/api/v1', router);
+
+// Not found handler
+app.use(notFound);
+
+// All response handlers
+app.use(responseHandler);
 
 app.listen(PORT, HOST, () => {
   logger.info(`NodeJS server listening on http://${HOST}:${PORT}`);
