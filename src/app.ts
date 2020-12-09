@@ -2,14 +2,13 @@
  * @Author: Ishaan Ohri
  * @Date: 2020-11-29 01:39:38
  * @Last Modified by: Ishaan Ohri
- * @Last Modified time: 2020-12-09 14:45:36
+ * @Last Modified time: 2020-12-09 14:58:28
  * @Description: The file is the driver file. It connects all routers and starts the application server
  */
 
 import express, { Application, Response, Request } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
-
 import logger from './log/config';
 import { router } from './api/routes';
 import { notFound, responseHandler } from './middleware';
