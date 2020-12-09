@@ -5,7 +5,7 @@
   "main": "app.ts",
   "scripts": {
     "build": "node build.js",
-    "lint": "pretty-quick && lint-staged",
+    "lint": "pretty-quick",
     "dev": "env-cmd -f ./src/config/dev.env nodemon ./src/app.ts",
     "update": "npx npm-check-updates -u",
     "start": "pm2 restart ./ecosystem.config.js"
