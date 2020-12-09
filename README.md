@@ -32,12 +32,14 @@ git checkout docker
 
 #### Development environment:
 
+- Create `dev.env` file and add environment variables according to `env.example`:
+```
+touch ./src/config/dev.env
+```
 - Start server:
 ```
 docker-compose up --build
 ```
-
-#### Production environment:
 
 ## Contributing
 

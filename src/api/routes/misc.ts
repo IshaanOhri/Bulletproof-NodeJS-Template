@@ -2,7 +2,7 @@
  * @Author: Ishaan Ohri
  * @Date: 2020-11-29 01:34:23
  * @Last Modified by: Ishaan Ohri
- * @Last Modified time: 2020-12-09 14:57:01
+ * @Last Modified time: 2020-12-09 15:01:44
  * @Description: Contains all miscellaneous routes
  */
 

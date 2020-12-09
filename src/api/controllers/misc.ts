@@ -2,7 +2,7 @@
  * @Author: Ishaan Ohri
  * @Date: 2020-11-29 01:33:58
  * @Last Modified by: Ishaan Ohri
- * @Last Modified time: 2020-12-09 14:57:15
+ * @Last Modified time: 2020-12-09 15:01:39
  * @Description: Defines functions for all miscellaneous routes
  */
 import { NextFunction, Request, Response } from 'express';
