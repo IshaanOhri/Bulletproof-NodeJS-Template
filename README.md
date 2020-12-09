@@ -37,7 +37,7 @@ npm install
 
 #### Development environment:
 
-- Create `dev.env` file and add environment variables according to `.env.example`:
+- Create `dev.env` file and add environment variables according to `env.example`:
 ```
 touch ./src/config/dev.env
 ```
